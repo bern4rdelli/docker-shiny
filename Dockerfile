@@ -7,7 +7,7 @@ MAINTAINER Marcus Oliveira da Silva <marcus@gmail.com>
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 
 #add repository and update the container
-#Installation of nesesary package/software for this containers...
+#Installation of necesary package/software for this containers...
 RUN apt-get update \
 &&  apt-get install -y -q ca-certificates wget apt-utils apt-transport-https
 RUN echo "deb https://cloud.r-project.org/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
