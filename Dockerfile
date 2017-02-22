@@ -57,7 +57,4 @@ RUN groupmod -g $SHINYGID shiny && \
     usermod -u $SHINYUID shiny && \
     chown -R $SHINYUID:$SHINYGID /home/shiny && \
     chown -R $SHINYUID:$SHINYGID /var/log/shiny-server && \
-    chown -R $SHINYUID:$SHINYGID /srv/shiny-server && \
-
-# shiny-server
-CMD bash -lc 'shiny-server'
+    chown -R $SHINYUID:$SHINYGID /srv/shiny-server
